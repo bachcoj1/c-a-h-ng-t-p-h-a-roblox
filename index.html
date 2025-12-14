@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng Tạp hóa Meme sea của Canada ctryball</title>
+    <link rel="stylesheet" href="style.css">
+    <!DOCTYPE html>
+<html lang="vi">
+<head>
+  
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">🌊</div>
+                <h1>Meme Sea</h1>
+                <span class="logo-subtitle">Đại dương meme vô tận</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="nav-link active">🏠 Trang chủ</a></li>
+                    <li><a href="#memes" class="nav-link">😂 Meme</a></li>
+                    <li><a href="#about" class="nav-link">ℹ️ Về chúng tôi</a></li>
+                    <li><a href="#quiz" class="nav-link">❓ Quiz</a></li>
+                </ul>
+            </nav>
+            <div class="theme-toggle">
+                <button id="themeBtn">🌙</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Khám phá 8 biểu tượng Meme huyền thoại</h2>
+                <p>Moai, Flame, Water, Paw, Snow, Gold, Dog và Ice - Mỗi meme đều có câu chuyện riêng!</p>
+                <div class="meme-emoji-display">
+                    <span class="meme-emoji" data-emoji="🗿">🗿</span>
+                    <span class="meme-emoji" data-emoji="🔥">🔥</span>
+                    <span class="meme-emoji" data-emoji="💧">💧</span>
+                    <span class="meme-emoji" data-emoji="🐾">🐾</span>
+                    <span class="meme-emoji" data-emoji="❄️">❄️</span>
+                    <span class="meme-emoji" data-emoji="💰">💰</span>
+                    <span class="meme-emoji" data-emoji="🐕">🐕</span>
+                    <span class="meme-emoji" data-emoji="🧊">🧊</span>
+                </div>
+                <a href="#memes" class="btn">Khám phá ngay!</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meme Cards Section -->
+    <section id="memes" class="memes">
+        <div class="container">
+            <h2 class="section-title">8 Biểu tượng Meme Sea</h2>
+            <p class="section-subtitle">Mỗi meme đại diện cho một sức mạnh đặc biệt trong thế giới meme</p>
+            
+            <div class="meme-filters">
+                <button class="filter-btn active" data-filter="all">Tất cả</button>
+                <button class="filter-btn" data-filter="element">Nguyên tố</button>
+                <button class="filter-btn" data-filter="animal">Động vật</button>
+                <button class="filter-btn" data-filter="object">Vật thể</button>
+            </div>
+            
+            <div class="memes-grid" id="memes-grid">
+                <!-- Meme cards sẽ được thêm bằng JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Meme Comparison -->
+    <section class="comparison">
+        <div class="container">
+            <h2 class="section-title">So sánh sức mạnh Meme</h2>
+            <div class="comparison-chart">
+                <div class="chart-container">
+                    <canvas id="memeStatsChart"></canvas>
+                </div>
+                <div class="chart-legend" id="chart-legend">
+                    <!-- Legend sẽ được thêm bằng JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meme Quiz -->
+    <section id="quiz" class="quiz">
+        <div class="container">
+            <h2 class="section-title">Quiz: Bạn là Meme nào?</h2>
+            <div class="quiz-container">
+                <div class="quiz-question" id="quiz-question">
+                    <h3>Bắt đầu Quiz nào!</h3>
+                    <p>Trả lời 5 câu hỏi để khám phá bạn là meme nào trong Meme Sea</p>
+                    <button class="btn" id="start-quiz">Bắt đầu Quiz</button>
+                </div>
+                <div class="quiz-result" id="quiz-result" style="display: none;">
+                    <div class="result-content">
+                        <h3>Kết quả của bạn:</h3>
+                        <div class="result-meme" id="result-meme">
+                            <!-- Kết quả sẽ hiển thị ở đây -->
+                        </div>
+                        <button class="btn" id="retry-quiz">Làm lại Quiz</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Về Meme Sea</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Meme Sea là một vũ trụ meme nơi 8 biểu tượng huyền thoại tồn tại và tương tác với nhau. Mỗi meme đại diện cho một sức mạnh, tính cách và câu chuyện độc đáo.</p>
+                    <p>Những meme này bắt nguồn từ các nền văn hóa internet khác nhau và đã trở thành biểu tượng trong cộng đồng mạng toàn cầu.</p>
+                    <div class="fun-facts">
+                        <h3>📚 Sự thật thú vị:</h3>
+                        <ul>
+                            <li>Moai (🗿) bắt nguồn từ tượng đá Easter Island</li>
+                            <li>Doge (🐕) trở nên nổi tiếng từ năm 2013</li>
+                            <li>Fire (🔥) thường được dùng để biểu thị sự xuất sắc</li>
+                            <li>Ice (🧊) đại diện cho sự bình tĩnh và lạnh lùng</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="meme-sea-illustration">
+                        <div class="meme-icon-large" style="background-color: #4a5568;">🗿</div>
+                        <div class="meme-icon-large" style="background-color: #e53e3e;">🔥</div>
+                        <div class="meme-icon-large" style="background-color: #3182ce;">💧</div>
+                        <div class="meme-icon-large" style="background-color: #ed8936;">🐾</div>
+                        <div class="meme-icon-large" style="background-color: #a0aec0;">❄️</div>
+                        <div class="meme-icon-large" style="background-color: #d69e2e;">💰</div>
+                        <div class="meme-icon-large" style="background-color: #b7791f;">🐕</div>
+                        <div class="meme-icon-large" style="background-color: #63b3ed;">🧊</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Meme Sea 🌊</h3>
+                    <p>Khám phá vũ trụ meme đầy màu sắc và thú vị</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-reddit"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Meme nổi bật</h3>
+                    <ul>
+                        <li><a href="#memes" data-meme="moai">🗿 Moai</a></li>
+                        <li><a href="#memes" data-meme="flame">🔥 Flame</a></li>
+                        <li><a href="#memes" data-meme="water">💧 Water</a></li>
+                        <li><a href="#memes" data-meme="paw">🐾 Paw</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Thông tin</h3>
+                    <ul>
+                        <li><a href="#about">Về chúng tôi</a></li>
+                        <li><a href="#quiz">Meme Quiz</a></li>
+                        <li><a href="#" id="random-meme-link">Meme ngẫu nhiên</a></li>
+                        <li><a href="#" id="dark-mode-toggle">Chế độ tối</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2023 Meme Sea. Tất cả các meme đều thuộc về cộng đồng internet.</p>
+                <p class="footer-note">Made with ❤️ và rất nhiều meme!</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Meme Modal -->
+    <div class="meme-modal" id="memeModal">
+        <div class="meme-modal-content">
+            <div class="meme-modal-header">
+                <h3 id="modal-meme-name">Meme Name</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="meme-modal-body">
+                <div class="modal-meme-display">
+                    <div class="modal-meme-emoji" id="modal-meme-emoji">🗿</div>
+                    <div class="modal-meme-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Sức mạnh:</span>
+                            <span class="stat-value" id="modal-power">80</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Độ phổ biến:</span>
+                            <span class="stat-value" id="modal-popularity">90</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Tính hài hước:</span>
+                            <span class="stat-value" id="modal-humor">75</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-meme-description" id="modal-description">
+                    <!-- Mô tả meme sẽ được thêm ở đây -->
+                </div>
+                <div class="modal-meme-quote">
+                    <p id="modal-quote">"..."</p>
+                </div>
+            </div>
+            <div class="meme-modal-footer">
+                <button class="btn share-meme-btn" id="shareMemeBtn">Chia sẻ meme này</button>
+                <button class="btn btn-secondary close-modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
